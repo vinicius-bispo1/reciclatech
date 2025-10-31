@@ -15,25 +15,66 @@ header {
   border-bottom: solid 2px #b4aeae;
   margin: 0 30px;
 }
+@media (max-width: 1024px) {
+  header {
+    margin: 0 15px;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    gap: 15px;
+    margin: 15px;
+  }
+}
 header div {
   display: flex;
   align-items: center;
   width: 20%;
   justify-content: space-around;
 }
+@media (max-width: 768px) {
+  header div {
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+  }
+}
 header div h1 {
   font-size: 2.5rem;
   color: #1f2937;
 }
+@media (max-width: 1024px) {
+  header div h1 {
+    font-size: 2rem;
+  }
+}
 
 .navbar {
   width: 40%;
+}
+@media (max-width: 1024px) {
+  .navbar {
+    width: 55%;
+  }
+}
+@media (max-width: 768px) {
+  .navbar {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
 .navbar ul {
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+@media (max-width: 1024px) {
+  .navbar ul {
+    gap: 15px;
+  }
 }
 .navbar ul li {
   height: 8vh;
@@ -46,12 +87,21 @@ header div h1 {
   font-size: 1;
   font-weight: 400;
 }
+@media (max-width: 1024px) {
+  .navbar ul li a {
+    font-size: 0.9rem;
+  }
+}
 
 .btnverde {
   background-color: #21c05c;
-  height: 10vh;
-  width: 28%;
-  border-radius: 10px;
+  width: 150px;
+  border-radius: 6px;
+}
+@media (max-width: 1024px) {
+  .btnverde {
+    width: 35%;
+  }
 }
 .btnverde .link {
   color: white;

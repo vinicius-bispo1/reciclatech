@@ -7,33 +7,63 @@
   text-decoration: none;
   font-family: "Poppins", sans-serif;
 }
-
+// max-width de desktop pra pra mobile e min-width do mobile pra desktop
 header {
   display: flex;
   justify-content: space-between;
-
   height: 14vh;
   border-bottom: solid 2px #b4aeae;
   margin: 0 30px;
+  @media (max-width: 1024px) {
+    // border: solid 2px red;
+    margin: 0 15px;
+  }
+  @media (max-width: 768px) {
+    flex-direction: column;
+    height: auto;
+    gap: 15px;
+    margin: 15px;
+  }
   div {
     display: flex;
     align-items: center;
     width: 20%;
     justify-content: space-around;
+    // border: solid 2px green;
+    @media (max-width: 768px) {
+      width: 100%;
+      justify-content: center;
+      gap: 10px;
+    }
     h1 {
       font-size: 2.5rem;
       color: #1f2937;
+      @media (max-width: 1024px) {
+        font-size: 2rem;
+      }
     }
   }
 }
 
 .navbar {
+  // border: solid 2px green;
   width: 40%;
+
+  @media (max-width: 1024px) {
+    width: 55%;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-bottom: 10px;
+  }
   ul {
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media (max-width: 1024px) {
+      gap: 15px;
+    }
 
     li {
       height: 8vh;
@@ -44,6 +74,9 @@ header {
         color: #4b5563;
         font-size: 1;
         font-weight: 400;
+        @media (max-width: 1024px) {
+          font-size: 0.9rem;
+        }
       }
     }
   }
@@ -51,10 +84,26 @@ header {
 
 .btnverde {
   background-color: #21c05c;
-  height: 10vh;
-  width: 28%;
-  border-radius: 10px;
+
+  width: 150px;
+  border-radius: 6px;
+  @media (max-width: 1024px) {
+    width: 35%;
+  }
   .link {
     color: white;
   }
 }
+
+// @media (max-width: 720px) {
+//   header {
+//   }
+// }
+// @media (min-width: ) {
+// }
+
+// @media (min-width: 700px) and (max-width: 400px) {
+//   header {
+//   color: white;
+//   }
+// }
