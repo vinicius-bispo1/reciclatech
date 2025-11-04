@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
@@ -12,18 +11,13 @@
 header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   height: 14vh;
   border-bottom: solid 2px #b4aeae;
   margin: 0 30px;
 }
 @media (max-width: 1024px) {
   header {
-<<<<<<< HEAD
     margin: 0 15px;
-=======
-    margin: 0 20px;
->>>>>>> 55db7a1f2a4ca4da68c640c9951ce604fe991f47
   }
 }
 @media (max-width: 768px) {
@@ -47,17 +41,6 @@ header div {
     gap: 10px;
   }
 }
-<<<<<<< HEAD
-=======
-header div img {
-  width: 50px;
-}
-@media (max-width: 768px) {
-  header div img {
-    width: 40px;
-  }
-}
->>>>>>> 55db7a1f2a4ca4da68c640c9951ce604fe991f47
 header div h1 {
   font-size: 2.5rem;
   color: #1f2937;
@@ -67,14 +50,6 @@ header div h1 {
     font-size: 2rem;
   }
 }
-<<<<<<< HEAD
-=======
-@media (max-width: 768px) {
-  header div h1 {
-    font-size: 1.8rem;
-  }
-}
->>>>>>> 55db7a1f2a4ca4da68c640c9951ce604fe991f47
 
 .navbar {
   width: 40%;
@@ -101,16 +76,6 @@ header div h1 {
     gap: 15px;
   }
 }
-<<<<<<< HEAD
-=======
-@media (max-width: 768px) {
-  .navbar ul {
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-  }
-}
->>>>>>> 55db7a1f2a4ca4da68c640c9951ce604fe991f47
 .navbar ul li {
   height: 8vh;
   display: flex;
@@ -124,32 +89,16 @@ header div h1 {
 }
 @media (max-width: 1024px) {
   .navbar ul li a {
-<<<<<<< HEAD
-=======
-    font-size: 0.95rem;
-  }
-}
-@media (max-width: 768px) {
-  .navbar ul li a {
->>>>>>> 55db7a1f2a4ca4da68c640c9951ce604fe991f47
     font-size: 0.9rem;
   }
 }
 
 .btnverde {
   background-color: #21c05c;
-<<<<<<< HEAD
   width: 150px;
   border-radius: 6px;
 }
 @media (max-width: 1024px) {
-=======
-  height: 10vh;
-  width: 28%;
-  border-radius: 6px;
-}
-@media (max-width: 8080px) {
->>>>>>> 55db7a1f2a4ca4da68c640c9951ce604fe991f47
   .btnverde {
     width: 35%;
   }
@@ -162,74 +111,50 @@ header div h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: auto;
-  padding: 20px 0;
-  margin: 0 30px;
-  margin-bottom: 20px;
-  border: solid 2px rgb(34, 255, 0);
+  padding: 0 20px;
+  border: solid 2px red;
 }
 .primeiraSection section {
-  border: solid 2px red;
+  border: solid 2px gold;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: start;
-  height: auto;
+  align-items: center;
   width: 50%;
-  padding: 20px 0;
 }
 .primeiraSection section h2 {
-  font-size: 3.75rem;
-  width: 80%;
+  font-size: 60px;
+  width: 90%;
   color: #1f2937;
 }
 .primeiraSection section p {
-  width: 65%;
-  font-size: 1.125rem;
+  font-size: 20px;
+  width: 90%;
   color: #4b5563;
 }
-.primeiraSection img {
-  width: 40%;
-  max-width: 400px;
+@media (max-width: 1040px) {
+  .primeiraSection .imgPrincipal {
+    width: 35vw;
+  }
 }
 
-.boxBtnsPrimeiraSection {
-  border: solid 2px yellow;
-  height: 10vh;
-  width: 50%;
+.BoxBtn {
+  width: 90%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
+  gap: 50px;
 }
-.boxBtnsPrimeiraSection button {
-  width: 40%;
-  min-width: 172px;
-  height: 6vh;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  font-size: 1.125rem;
-  border-radius: 10px;
-  cursor: pointer;
-}
-.boxBtnsPrimeiraSection button img {
-  width: 15%;
-}
-
-.btnVerde {
-  background-color: #16a34a;
-  color: #fff;
+.BoxBtn button {
   border: none;
-}
-
-.btnBranco {
-  background-color: transparent;
-  border: solid #2563eb 1px;
+  padding: 15px 40px;
+  border: solid 2px #2563eb;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
   color: #2563eb;
+  gap: 5px;
 }
-
-/* -----------------------------
-   RESPONSIVIDADE
---------------------------------*/
-/* Tablets – até 1024px *//*# sourceMappingURL=style.css.map */
+.BoxBtn .btnVerde {
+  background-color: #16a34a;
+  color: white;
+  border: none;
+}/*# sourceMappingURL=style.css.map */
