@@ -15,6 +15,7 @@ $primary-color: #16a34a;
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   height: 14vh;
   border-bottom: solid 2px #b4aeae;
   margin: 0 30px;
@@ -45,6 +46,9 @@ header {
       @media (max-width: 1024px) {
         font-size: 2rem;
       }
+      @media (max-width: 768px) {
+        font-size: 1.8rem;
+      }
     }
   }
 }
@@ -69,6 +73,11 @@ header {
     @media (max-width: 1024px) {
       gap: 15px;
     }
+    @media (max-width: 768px) {
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
 
     li {
       height: 8vh;
@@ -86,6 +95,9 @@ header {
         @media (max-width: 1024px) {
           font-size: 0.9rem;
         }
+        @media (max-width: 768px) {
+          font-size: 0.9rem;
+        }
       }
     }
   }
@@ -93,12 +105,16 @@ header {
 
 .btnverde {
   background-color: #21c05c;
-
-  width: 150px;
+  height: 10vh;
+  width: 28%;
   border-radius: 6px;
   @media (max-width: 1024px) {
     width: 35%;
   }
+  @media (max-width: 390px) {
+    width: 50%;
+  }
+
   .link {
     color: white;
   }
@@ -109,29 +125,57 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  border: solid 2px red;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+  }
 
   section {
-    border: solid 2px gold;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     width: 50%;
+
+    @media (max-width: 768px) {
+      width: 90%;
+    }
     h2 {
       font-size: 60px;
       width: 90%;
       color: #1f2937;
+      @media (max-width: 1024px) {
+        font-size: 2.5rem;
+      }
+      @media (max-width: 768px) {
+        font-size: 2rem;
+        width: 100%;
+      }
+      @media (max-width: 480px) {
+        font-size: 1.6rem;
+      }
     }
     p {
       font-size: 20px;
       width: 90%;
       color: #4b5563;
+
+      @media (max-width: 1024px) {
+        font-size: 1rem;
+        width: 80%;
+      }
+      @media (max-width: 768px) {
+        width: 90%;
+      }
+      @media (max-width: 480px) {
+        font-size: 0.9rem;
+      }
     }
   }
   .imgPrincipal {
     @media (max-width: 1040px) {
-      width: 35vw;
+      width: 40%;
     }
   }
 }
@@ -140,6 +184,13 @@ header {
   width: 90%;
   display: flex;
   gap: 50px;
+  @media (max-width: 768px) {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    gap: 10px;
+  }
   button {
     border: none;
     padding: 15px 40px;
@@ -149,11 +200,48 @@ header {
     border-radius: 6px;
     color: #2563eb;
     gap: 5px;
+    @media (max-width: 768px) {
+      width: 50%;
+      height: 58px;
+      font-size: 1rem;
+      justify-content: center;
+    }
+    @media (max-width: 480px) {
+      width: 90%;
+      font-size: 0.9rem;
+    }
   }
   .btnVerde {
     background-color: $primary-color;
     color: white;
     border: none;
+  }
+}
+
+.dadosNumericos {
+  height: 20vh;
+  background-color: #f3f5f8;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  @media (max-width: 230px) {
+    flex-wrap: wrap;
+  }
+  div {
+    text-align: center;
+    h2 {
+      color: $primary-color;
+      font-size: 2.5rem;
+      @media (max-width: 420px) {
+        font-size: 1.5rem;
+      }
+    }
+    p {
+      color: #4b5563;
+      @media (max-width: 420px) {
+        font-size: 0.9rem;
+      }
+    }
   }
 }
 

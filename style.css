@@ -11,6 +11,7 @@
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   height: 14vh;
   border-bottom: solid 2px #b4aeae;
   margin: 0 30px;
@@ -50,6 +51,11 @@ header div h1 {
     font-size: 2rem;
   }
 }
+@media (max-width: 768px) {
+  header div h1 {
+    font-size: 1.8rem;
+  }
+}
 
 .navbar {
   width: 40%;
@@ -76,6 +82,13 @@ header div h1 {
     gap: 15px;
   }
 }
+@media (max-width: 768px) {
+  .navbar ul {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+}
 .navbar ul li {
   height: 8vh;
   display: flex;
@@ -92,15 +105,26 @@ header div h1 {
     font-size: 0.9rem;
   }
 }
+@media (max-width: 768px) {
+  .navbar ul li a {
+    font-size: 0.9rem;
+  }
+}
 
 .btnverde {
   background-color: #21c05c;
-  width: 150px;
+  height: 10vh;
+  width: 28%;
   border-radius: 6px;
 }
 @media (max-width: 1024px) {
   .btnverde {
     width: 35%;
+  }
+}
+@media (max-width: 390px) {
+  .btnverde {
+    width: 50%;
   }
 }
 .btnverde .link {
@@ -112,29 +136,70 @@ header div h1 {
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  border: solid 2px red;
+}
+@media (max-width: 768px) {
+  .primeiraSection {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 .primeiraSection section {
-  border: solid 2px gold;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   width: 50%;
 }
+@media (max-width: 768px) {
+  .primeiraSection section {
+    width: 90%;
+  }
+}
 .primeiraSection section h2 {
   font-size: 60px;
   width: 90%;
   color: #1f2937;
+}
+@media (max-width: 1024px) {
+  .primeiraSection section h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .primeiraSection section h2 {
+    font-size: 2rem;
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .primeiraSection section h2 {
+    font-size: 1.6rem;
+  }
 }
 .primeiraSection section p {
   font-size: 20px;
   width: 90%;
   color: #4b5563;
 }
+@media (max-width: 1024px) {
+  .primeiraSection section p {
+    font-size: 1rem;
+    width: 80%;
+  }
+}
+@media (max-width: 768px) {
+  .primeiraSection section p {
+    width: 90%;
+  }
+}
+@media (max-width: 480px) {
+  .primeiraSection section p {
+    font-size: 0.9rem;
+  }
+}
 @media (max-width: 1040px) {
   .primeiraSection .imgPrincipal {
-    width: 35vw;
+    width: 40%;
   }
 }
 
@@ -142,6 +207,15 @@ header div h1 {
   width: 90%;
   display: flex;
   gap: 50px;
+}
+@media (max-width: 768px) {
+  .BoxBtn {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    gap: 10px;
+  }
 }
 .BoxBtn button {
   border: none;
@@ -153,8 +227,55 @@ header div h1 {
   color: #2563eb;
   gap: 5px;
 }
+@media (max-width: 768px) {
+  .BoxBtn button {
+    width: 50%;
+    height: 58px;
+    font-size: 1rem;
+    justify-content: center;
+  }
+}
+@media (max-width: 480px) {
+  .BoxBtn button {
+    width: 90%;
+    font-size: 0.9rem;
+  }
+}
 .BoxBtn .btnVerde {
   background-color: #16a34a;
   color: white;
   border: none;
+}
+
+.dadosNumericos {
+  height: 20vh;
+  background-color: #f3f5f8;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (max-width: 230px) {
+  .dadosNumericos {
+    flex-wrap: wrap;
+  }
+}
+.dadosNumericos div {
+  text-align: center;
+}
+.dadosNumericos div h2 {
+  color: #16a34a;
+  font-size: 2.5rem;
+}
+@media (max-width: 420px) {
+  .dadosNumericos div h2 {
+    font-size: 1.5rem;
+  }
+}
+.dadosNumericos div p {
+  color: #4b5563;
+}
+@media (max-width: 420px) {
+  .dadosNumericos div p {
+    font-size: 0.9rem;
+  }
 }/*# sourceMappingURL=style.css.map */
